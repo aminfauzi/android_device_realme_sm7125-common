@@ -36,7 +36,7 @@ public class RealmePartsActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+        setTitle("realme Lab");
 
         Fragment fragment = getFragmentManager().findFragmentById(android.R.id.content);
         if (fragment == null) {
