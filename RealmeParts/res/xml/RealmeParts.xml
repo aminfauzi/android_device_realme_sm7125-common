@@ -29,10 +29,10 @@
         android:title="@string/misc_title">
 
         <Preference
-            android:key="dc_dimming"
+            android:key="display_settings"
             android:icon="@drawable/ic_dcdimming"
-            android:title="@string/dc_dimming_title"
-            android:summary="@string/dc_dimming_summary" />
+            android:title="@string/display_settings_title"
+            android:summary="@string/display_settings_summary" />
     </PreferenceCategory>
 
 <!--
