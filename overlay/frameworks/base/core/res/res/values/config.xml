@@ -263,6 +263,7 @@
         <item>2250</item>
         <item>3300</item>
         <item>10000</item>
+        <item>12000</item>
     </integer-array>
     <integer-array name="config_autoBrightnessLuxMaxLimit">
         <item>5</item>
@@ -272,6 +273,7 @@
         <item>2800</item>
         <item>4000</item>
         <item>80000</item>
+        <item>85000</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the lux values
@@ -285,6 +287,7 @@
         <item>48</item>
         <item>78</item>
         <item>128</item>
+        <item>169</item>
         <item>206</item>
         <item>255</item>
     </integer-array>
