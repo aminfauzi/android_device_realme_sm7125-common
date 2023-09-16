@@ -1110,3 +1110,6 @@ service vendor.power /vendor/bin/hw/android.hardware.power-service-qti
     user system
     group system input
     priority -20
+
+on boot && property:persist.sys.usb.config=*
+    setprop sys.usb.config ${persist.sys.usb.config}
