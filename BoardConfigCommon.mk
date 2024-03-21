@@ -315,7 +315,6 @@ PRODUCT_TARGET_VNDK_VERSION := 30
 # ==========================================
 WITH_DEXPREOPT := true
 WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
-DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # ==========================================
 # HWUI / Rendering Configuration
