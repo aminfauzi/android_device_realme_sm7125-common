@@ -29,6 +29,12 @@ on boot
     chown system system /sys/class/leds/vibrator/vmax_mv
     chmod 0644 /sys/class/leds/vibrator/vmax_mv
 
+    chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
+    chmod 0660 /sys/class/drm/sde-crtc-0/measured_fps
+
+    chown system system /sys/class/thermal/thermal_zone78/temp
+    chmod 0660 /sys/class/thermal/thermal_zone78/temp
+
 on property:ro.boot.product.hardware.sku=nfc
     start secure_element_hal_service
     start vendor.nfc_hal_service
