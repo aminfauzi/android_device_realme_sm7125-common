@@ -208,7 +208,8 @@ ro.soc.manufacturer=QTI
 ro.soc.model=SM7125
 
 # Usb
-persist.vendor.usb.config.extra=none
+persist.vendor.usb.config=mtp
+persist.vendor.usb.config.extra=mtp
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
 vendor.usb.qdss.inst.name=qdss

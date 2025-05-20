@@ -126,6 +126,7 @@ on boot && property:vendor.usb.use_ffs_mtp=1
 
 on property:persist.vendor.usb.config=*
     setprop persist.sys.usb.config ${persist.vendor.usb.config}
+    setprop sys.usb.config ${persist.vendor.usb.config},${persist.vendor.usb.config.extra}
 
 on boot && property:ro.boot.usbconfigfs=true
         setprop sys.usb.configfs 1
