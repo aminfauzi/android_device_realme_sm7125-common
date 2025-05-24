@@ -40,4 +40,6 @@
     <!-- Enable vibrate for calls by default -->
     <bool name="def_vibrate_when_ringing">true</bool>
 
+    <!-- Enable mtp for usb connection by default -->
+    <string name="default_usb_configuration" translatable="false">1</string>
 </resources>
