@@ -121,6 +121,7 @@ persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # USB
 ro.product.model=Realme 6 Pro
+vendor.usb.product_string=Realme 6 Pro
 
 # WFD
 persist.debug.wfd.enable=1
