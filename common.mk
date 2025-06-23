@@ -331,6 +331,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+## Partition
+PRODUCT_PACKAGES += \
+     vendor_bt_firmware_mountpoint \
+     vendor_dsp_mountpoint \
+     vendor_firmware_mnt_mountpoint
+
 ## Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
