@@ -288,11 +288,6 @@ TARGET_USE_AOSP_SURFACEFLINGER := true
 BOARD_VNDK_VERSION := current
 
 # ==========================================
-# Under-Display Fingerprint Sensor
-# ==========================================
-TARGET_SURFACEFLINGER_UDFPS_LIB := //$(COMMON_PATH):libudfps_extension.realme_sm7125
-
-# ==========================================
 # Dexpreopt Configuration
 # ==========================================
 ifeq ($(HOST_OS),linux)
