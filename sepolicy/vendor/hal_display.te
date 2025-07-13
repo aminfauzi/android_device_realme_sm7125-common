@@ -1,0 +1,26 @@
+#
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+# This policy is to fix the display-related denials that cause a bootloop.
+#
+
+# 1. Define the new service types
+type hal_display_config_service, domain;
+type hal_display_config_exec, exec_type, file_type, vendor_file_type;
+type hal_display_allocator_service, domain;
+
+# 2. Grant permissions for these new services to run as daemons
+init_daemon_domain(hal_display_config_service)
+init_daemon_domain(hal_display_allocator_service)
+
+# 3. Allow init to start the display config service
+allow init hal_display_config_exec:file { getattr open read execute map };
+
+# 4. Grant all the permissions that were denied in the log
+allow { system_server surfaceflinger hal_graphics_composer_default } hal_display_config_service:service_manager find;
+allow { system_server surfaceflinger } gpu_device:chr_file { getattr ioctl open read write };
+allow { system_server surfaceflinger hal_graphics_composer_default } vendor_display_prop:file { getattr open read };
+allow vendor_init hal_display_config_service:service_manager { add find };
+allow hal_graphics_allocator_default hal_display_allocator_service:service_manager add;
