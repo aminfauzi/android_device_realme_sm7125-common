@@ -40,6 +40,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     libaudio-resampler \
     libvolumelistener \
+    libprocessgroup.vendor \
     android.hardware.audio@2.0-service \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
