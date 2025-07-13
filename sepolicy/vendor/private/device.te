@@ -1,0 +1,30 @@
+# System server → Init binder call
+# ⚠️ Required to fix the system server hang. This is borderline and should be kept minimal.
+allow system_server init:binder { call };
+
+# NN HAL needs access to properties
+allow vendor_hal_neuralnetworks_default default_prop:file { read open getattr map };
+
+# Camera HAL reads memory info for tuning
+allow hal_camera_default proc_meminfo:file { open getattr };
+
+# Post-init QTI shell scripts tweak kernel params
+allow vendor_qti_init_shell proc_page_cluster:file { open };
+allow vendor_qti_init_shell sysfs:file { write };
+
+#Other useful allow rules
+allow vendor_init default_prop:property_service { set };
+allow vendor_init config_prop:property_service { set };
+allow vendor_init vendor_default_prop:property_service { set };
+allow fsck vendor_modem_efs_partition_device:blk_file { read write };
+allow fsck block_device:blk_file { read write };
+allow fsck fsck:capability { kill };
+allow hal_camera_default system_prop:file { read };
+allow hal_camera_default default_prop:file { read };
+allow hal_fingerprint_default vendor_default_prop:property_service { set };
+allow hal_fingerprint_default default_prop:property_service { set };
+allow vendor_ssr_setup sysfs:file { write };
+allow vendor_init tmpfs:dir { search };
+allow vendor_init tmpfs:file { getattr open read };
+allow linkerconfig self:capability { kill };
+allow rmt_storage default_prop:file { read };
