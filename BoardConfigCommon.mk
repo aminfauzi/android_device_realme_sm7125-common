@@ -304,7 +304,7 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 # ==========================================
 # Init Configuration
 # ==========================================
-TARGET_RECOVERY_DEVICE_MODULES := libinit_realme_sm7125
+
 
 # ==========================================
 # Releasetools Configuration
