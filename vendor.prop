@@ -154,6 +154,9 @@ vendor.hw.fm.init=0
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# FS-verity
+ro.apk_verity.mode=0
+
 #Graphics
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
