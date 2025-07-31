@@ -450,6 +450,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/common/libqti-perfd-client \
     kernel/realme/sm7125
 
+$(call soong_config_set,surfaceflinger,udfps_lib,//$(LOCAL_PATH):libudfps_extension.realme_sm7125)
+
 # ==========================================
 # VNDK Libraries
 # ==========================================
