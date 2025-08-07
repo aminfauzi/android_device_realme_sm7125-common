@@ -168,6 +168,7 @@ ro.apk_verity.mode=0
 #Graphics
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
+debug.sf.disable_client_composition_cache=0
 
 # Keyguard
 keyguard.no_require_sim=true
