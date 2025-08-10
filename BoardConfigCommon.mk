@@ -187,7 +187,6 @@ TARGET_HAS_WIDE_COLOR_DISPLAY := true
 # Media Configuration
 # ==========================================
 TARGET_USES_ION := true
-TARGET_DISABLED_UBWC := true
 
 # ==========================================
 # Bluetooth Configuration
