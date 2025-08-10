@@ -50,6 +50,9 @@ BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 100663296
 BOARD_SUPER_PARTITION_SIZE := 8476688384
 
+# Disable Virtual A/B updates (device uses non-A/B layout)
+BOARD_VIRTUAL_AB_ENABLE := false
+
 ## Dynamic Partitions
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm system system_ext vendor product
