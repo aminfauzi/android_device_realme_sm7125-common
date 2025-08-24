@@ -438,6 +438,9 @@ PRODUCT_PACKAGES += \
 ## Blur
 TARGET_ENABLE_BLUR := true
 
+# Dolby Atmos
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 ## Lawnchair
 $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
