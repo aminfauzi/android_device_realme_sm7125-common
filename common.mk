@@ -438,6 +438,9 @@ PRODUCT_PACKAGES += \
 ## Blur
 TARGET_ENABLE_BLUR := true
 
+# Bypass Charging
+BYPASS_CHARGE_SUPPORTED := true
+
 # Dolby Atmos
 $(call inherit-product, hardware/dolby/dolby.mk)
 
