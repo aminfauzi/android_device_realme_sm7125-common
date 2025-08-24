@@ -1,2 +1,0 @@
-allow tee tmpfs:dir read;
-allow tee tmpfs:dir { open read };
