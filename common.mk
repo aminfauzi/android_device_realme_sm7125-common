@@ -441,10 +441,6 @@ TARGET_ENABLE_BLUR := true
 ## Lawnchair
 $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
-## LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
-
 ## NotchBar Killer
 PRODUCT_PACKAGES += \
     NotchBarKiller \
