@@ -380,6 +380,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fs_config_files
 
+# APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 ## Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
