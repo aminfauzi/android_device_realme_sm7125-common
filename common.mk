@@ -400,6 +400,10 @@ PRODUCT_PACKAGES += \
      vendor_dsp_mountpoint \
      vendor_firmware_mnt_mountpoint
 
+# Perf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.2.vendor
+
 ## Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
