@@ -92,6 +92,13 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 # Pre-Rendering
 ro.vendor.perf.scroll_opt=true
 
+# ProjectInfinityX
+ro.product.marketname=Realme 6 Pro
+ro.infinity.soc=Qualcomm SM7125 Snapdragon 720G
+ro.infinity.battery=Non-removable Li-Ion 4300 mAh
+ro.infinity.display=2400 x 1080 (20:9), 6.60 inch, 90 Hz
+ro.infinity.camera=64MP + 12MP + 8MP + 2MP
+
 #Radio
 DEVICE_PROVISIONED=1
 persist.data.df.dev_name=rmnet_usb0
