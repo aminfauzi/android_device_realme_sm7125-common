@@ -138,6 +138,12 @@ ro.config.avoid_gfx_accel=true
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.auto_latch_unsignaled=0
 
+# Fingerprint
+ro.vendor.fingerprint.type=side
+ro.vendor.fingerprint.supports_gestures=true
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_location=1080|912|150
+
 # Fling
 ro.min.fling_velocity=160 
 ro.max.fling_velocity=20000
