@@ -463,6 +463,9 @@ TARGET_ENABLE_BLUR := true
 # Bypass Charging
 BYPASS_CHARGE_SUPPORTED := true
 
+# Disable Scudo to save RAM.
+PRODUCT_DISABLE_SCUDO := true
+
 # Dolby Atmos
 $(call inherit-product, hardware/dolby/dolby.mk)
 
