@@ -59,4 +59,8 @@
     <dimen name="physical_fingerprint_sensor_center_screen_location_y">912px</dimen>
     <dimen name="physical_fingerprint_sensor_center_screen_location_x">1080px</dimen>
 
+    <!-- 3-Button Navigation Bar Layout -->
+    <dimen name="navigation_key_width">52dp</dimen>
+    <dimen name="navigation_key_padding">8dp</dimen>
+
 </resources>
