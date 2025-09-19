@@ -477,9 +477,6 @@ PRODUCT_DISABLE_SCUDO := true
 # Dolby Atmos
 $(call inherit-product, hardware/dolby/dolby.mk)
 
-## Lawnchair
-$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
-
 ## NotchBar Killer
 PRODUCT_PACKAGES += \
     NotchBarKiller \
