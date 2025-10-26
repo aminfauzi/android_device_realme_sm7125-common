@@ -490,6 +490,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
 
+## Root
+WITH_SU := true
+
 # ==========================================
 # Performance Optimization
 # ==========================================
