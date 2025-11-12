@@ -291,10 +291,8 @@ BOARD_VNDK_VERSION := current
 # ==========================================
 # Dexpreopt Configuration
 # ==========================================
-ifeq ($(HOST_OS),linux)
-    WITH_DEXPREOPT ?= false
-endif
-WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= true
+WITH_DEXPREOPT := true
+WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # ==========================================
