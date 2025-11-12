@@ -296,9 +296,9 @@ WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # ==========================================
-# Init Configuration
+# HWUI / Rendering Configuration
 # ==========================================
-
+HWUI_COMPILE_FOR_PERF := true
 
 # ==========================================
 # Releasetools Configuration
