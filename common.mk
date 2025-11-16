@@ -426,6 +426,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.1.vendor \
     vendor.qti.hardware.servicetracker@1.2.vendor
 
+## Speaker layout channel mask
+$(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
+
 ## Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
