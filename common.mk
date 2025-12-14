@@ -267,7 +267,6 @@ PRODUCT_COPY_FILES += \
 ## NFC
 ifeq ($(BOARD_HAS_NFC),true)
 PRODUCT_PACKAGES += \
-    NfcNci \
     SecureElement \
     Tag \
     android.hardware.nfc@1.2-service \
