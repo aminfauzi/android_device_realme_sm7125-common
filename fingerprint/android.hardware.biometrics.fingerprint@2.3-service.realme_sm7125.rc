@@ -1,13 +1,22 @@
+# fingerprint HAL service - gated on keymaster / qseecom readiness
 service vendor.fps_hal.realme_sm7125 /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.realme_sm7125
-    # "class hal" causes a race condition on some devices due to files created
-    # in /data. As a workaround, postpone startup until later in boot once
-    # /data is mounted.
     class hal
     user system
     group system input uhid
     task_profiles ProcessCapacityHigh HighPerformance
     priority -20
     writepid /dev/cpuset/system-background/tasks
+    disabled
+    restart on-failure
 
+# Start as soon as the keymaster HAL is running (common name used by QTI trees).
+on property:init.svc.vendor.keymaster_hal_4_1=running
+    start vendor.fps_hal.realme_sm7125
+
+# Also try starting when the qseecom daemon is up (some trees use this service name).
+on property:init.svc.vendor.qseecomd=running
+    start vendor.fps_hal.realme_sm7125
+
+# Fallback: start right after filesystems are up (post-fs-data) if nothing else fired.
 on post-fs-data
     start vendor.fps_hal.realme_sm7125
