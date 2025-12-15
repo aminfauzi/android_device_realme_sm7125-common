@@ -454,7 +454,7 @@ PRODUCT_PACKAGES += \
 # ==========================================
 
 ## Blur
-TARGET_ENABLE_BLUR := true
+TARGET_ENABLE_BLUR := false
 
 # Bypass Charging
 BYPASS_CHARGE_SUPPORTED := true
