@@ -175,7 +175,6 @@ USE_XML_AUDIO_POLICY_CONF := 1
 # ==========================================
 # Display Configuration
 # ==========================================
-TARGET_SCREEN_DENSITY := 440
 TARGET_USES_HWC2 := true
 TARGET_USES_DRM_PP := true
 BOARD_USES_ADRENO := true
