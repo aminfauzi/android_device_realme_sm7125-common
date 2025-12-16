@@ -665,7 +665,10 @@ vendor/lib64/libmulawdec.so
 
 # Media
 vendor/etc/seccomp_policy/mediacodec.policy
+vendor/lib/libOmxAacEnc.so
+vendor/lib/libmm-omxcore.so
 vendor/lib/libAlacSwDec.so
+vendor/lib/libOmxAmrEnc.so
 vendor/lib/libApeSwDec.so
 vendor/lib/libFlacSwDec.so
 vendor/lib/libI420colorconvert.so
@@ -677,7 +680,10 @@ vendor/lib/libOmxAmrwbplusDec.so
 vendor/lib/libOmxApeDec.so
 vendor/lib/libOmxApeDecSw.so
 vendor/lib/libOmxDsdDec.so
+vendor/lib/libOmxEvrcEnc.so
 vendor/lib/libOmxEvrcDec.so
+vendor/lib/libOmxG711Enc.so
+vendor/lib/libOmxQcelp13Enc.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxSwVencMpeg4.so
 vendor/lib/libOmxVideoDSMode.so
