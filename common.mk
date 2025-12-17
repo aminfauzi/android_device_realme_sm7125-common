@@ -459,9 +459,6 @@ TARGET_ENABLE_BLUR := false
 # Disable Scudo to save RAM.
 PRODUCT_DISABLE_SCUDO := true
 
-# Dolby Atmos
-$(call inherit-product, hardware/dolby/dolby.mk)
-
 ## NotchBar Killer
 PRODUCT_PACKAGES += \
     NotchBarKiller \
