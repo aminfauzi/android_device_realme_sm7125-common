@@ -191,6 +191,9 @@ ro.hardware.nfc_nci=nqx.default
 # PASR
 vendor.power.pasr.enabled=true
 
+# Perf
+vendor.perf.framepacing.enable=1
+
 # Radio
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
