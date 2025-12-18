@@ -453,6 +453,10 @@ PRODUCT_PACKAGES += \
 # Device-specific Packages
 # ==========================================
 
+## AudioFX
+PRODUCT_PACKAGES += \
+    AudioFX
+
 ## Blur
 TARGET_ENABLE_BLUR := false
 
