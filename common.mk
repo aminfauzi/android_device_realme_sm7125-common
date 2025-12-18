@@ -460,6 +460,10 @@ PRODUCT_PACKAGES += \
 ## Blur
 TARGET_ENABLE_BLUR := false
 
+## Calendar - lineageos
+PRODUCT_PACKAGES += \
+    Etar
+
 # Disable Scudo to save RAM.
 PRODUCT_DISABLE_SCUDO := true
 
