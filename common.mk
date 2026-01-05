@@ -464,6 +464,12 @@ PRODUCT_DISABLE_SCUDO := true
 # Dolby Atmos
 $(call inherit-product, hardware/dolby/dolby.mk)
 
+## LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay-service.sdm
+
+$(call soong_config_set,livedisplay_sdm,enable_dm,false)
+
 ## NotchBar Killer
 PRODUCT_PACKAGES += \
     NotchBarKiller \
