@@ -348,6 +348,47 @@ vendor/lib/libdpmqmihal.so
 vendor/lib64/libdpmqmihal.so
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=_vendor
 
+# Dolby Spatial Audio
+vendor/lib/soundfx/libspatialaudio.so
+vendor/lib64/soundfx/libspatialaudio.so
+
+# Dolby Apps & Frameworks
+system_ext/app/MotoSignatureApp/MotoSignatureApp.apk
+system_ext/priv-app/MotoDolbyDax3/MotoDolbyDax3.apk
+system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk
+system_ext/priv-app/daxService/daxService.apk
+system_ext/framework/com.motorola.frameworks.core.addon.jar
+system_ext/framework/com.motorola.motosignature.jar
+system_ext/framework/moto-checkin.jar
+system_ext/framework/moto-settings.jar
+system_ext/framework/moto.jar
+
+# Dolby DAP storage
+vendor/lib/libdapparamstorage.so
+vendor/lib64/libdapparamstorage.so
+
+# Dolby DMS HAL
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
+vendor/lib/vendor.dolby.hardware.dms@2.0.so
+vendor/lib/vendor.dolby.hardware.dms@2.0-impl.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
+vendor/lib64/libdlbdsservice.so
+
+# Dolby SoundFX / Atmos engine
+vendor/lib/soundfx/libswdap.so
+vendor/lib64/soundfx/libswdap.so
+vendor/lib/soundfx/libswgamedap.so
+vendor/lib64/soundfx/libswgamedap.so
+vendor/lib/soundfx/libswvqe.so
+vendor/lib64/soundfx/libswvqe.so
+vendor/lib/soundfx/libdlbvol.so
+vendor/lib64/soundfx/libdlbvol.so
+
+# Dolby OEM libs
+vendor/lib/libdlbpreg.so
+vendor/lib64/libdlbpreg.so
+vendor/lib64/liboem_specific.so
 
 # DRM
 vendor/bin/qseecomd
