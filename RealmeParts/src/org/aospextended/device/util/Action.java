@@ -45,6 +45,7 @@ import android.view.KeyEvent;
 import android.view.WindowManagerGlobal;
 
 import java.net.URISyntaxException;
+import java.lang.reflect.Method;
 
 public class Action {
     public static final String TAG = Utils.TAG;
@@ -306,7 +307,17 @@ public class Action {
     }
 
     public static void triggerVirtualKeypress(final int keyCode, boolean longpress) {
-        InputManager im = InputManager.getInstance();
+        InputManager im = null;
+        try {
+          // Use reflection to access the hidden getInstance() method
+          Method getInstanceMethod = InputManager.class.getDeclaredMethod("getInstance");
+          getInstanceMethod.setAccessible(true);
+          im = (InputManager) getInstanceMethod.invoke(null);
+        } catch (Exception e) {
+          e.printStackTrace();
+          return; // abort if InputManager can't be accessed
+        }
+
         long now = SystemClock.uptimeMillis();
         int downflags = 0;
         int upflags = 0;
