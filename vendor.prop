@@ -136,6 +136,7 @@ ro.surface_flinger.support_kernel_idle_timer=true
 ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.use_color_management=true
+ro.surface_flinger.game_default_frame_rate_override=90
 ro.config.avoid_gfx_accel=true
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.auto_latch_unsignaled=0
