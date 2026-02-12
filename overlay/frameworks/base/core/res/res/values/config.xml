@@ -367,7 +367,7 @@
     <!-- Default screen brightness setting
          Must be in the range specified by minimum and maximum.
          Equivalent to 67/255 (default for this device)    -->
-    <integer name="config_screenBrightnessSettingDefault">44</integer>
+    <integer name="config_screenBrightnessSettingDefault">55</integer>
 
      <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
     <integer-array name="config_keyboardTapVibePattern">
