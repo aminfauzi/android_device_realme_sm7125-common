@@ -284,9 +284,10 @@ BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 TARGET_USE_AOSP_SURFACEFLINGER := true
 
 # ==========================================
-# Treble Configuration
+# VNDK Configuration
 # ==========================================
 BOARD_VNDK_VERSION := current
+PRODUCT_TARGET_VNDK_VERSION := 30
 
 # ==========================================
 # Dexpreopt Configuration
