@@ -474,6 +474,10 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set_bool,livedisplay_sdm,enable_dm,false)
 
+## Music Player - lineageos
+PRODUCT_PACKAGES += \
+    Twelve
+
 ## NotchBar Killer
 PRODUCT_PACKAGES += \
     NotchBarKiller \
