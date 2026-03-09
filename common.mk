@@ -464,9 +464,6 @@ PRODUCT_PACKAGES += \
 # Disable Scudo to save RAM.
 PRODUCT_DISABLE_SCUDO := true
 
-# Dolby Atmos
-$(call inherit-product, hardware/dolby/dolby.mk)
-
 ## LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay-service.sdm
