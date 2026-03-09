@@ -184,7 +184,7 @@
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <integer name="config_screenBrightnessDoze">17</integer>
+    <integer name="config_screenBrightnessDoze">10</integer>
 
     <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
@@ -257,23 +257,31 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>45</item>
-        <item>1025</item>
-        <item>1480</item>
-        <item>2250</item>
-        <item>3300</item>
-        <item>10000</item>
-        <item>12000</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>40</item>
+        <item>80</item>
+        <item>120</item>
+        <item>180</item>
+        <item>250</item>
+        <item>350</item>
+        <item>500</item>
+        <item>800</item>
+        <item>1200</item>
+        <item>2000</item>
+        <item>4000</item>
     </integer-array>
     <integer-array name="config_autoBrightnessLuxMaxLimit">
-        <item>5</item>
-        <item>150</item>
-        <item>1150</item>
-        <item>1900</item>
-        <item>2800</item>
-        <item>4000</item>
+        <item>10</item>
+        <item>50</item>
+        <item>200</item>
+        <item>600</item>
+        <item>1500</item>
+        <item>5000</item>
+        <item>20000</item>
         <item>80000</item>
-        <item>85000</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the lux values
@@ -282,14 +290,22 @@
          The brightness values must be between 0 and 255 and be non-decreasing.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
+        <item>4</item>     <!-- pitch dark -->
         <item>8</item>
+        <item>14</item>
         <item>22</item>
-        <item>48</item>
-        <item>78</item>
-        <item>128</item>
-        <item>169</item>
-        <item>206</item>
-        <item>255</item>
+        <item>34</item>
+        <item>52</item>
+        <item>72</item>
+        <item>92</item>
+        <item>112</item>
+        <item>132</item>
+        <item>160</item>
+        <item>188</item>
+        <item>210</item>
+        <item>232</item>
+        <item>245</item>
+        <item>255</item>   <!-- direct sunlight -->
     </integer-array>
 
     <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
@@ -346,14 +362,14 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">3000</integer>
 
     <!-- Fast brightness animation ramp rate in brightness units per second-->
-    <integer name="config_brightness_ramp_rate_fast">307</integer>
+    <integer name="config_brightness_ramp_rate_fast">420</integer>
 
     <!-- Slow brightness animation ramp rate in brightness units per second-->
-    <integer name="config_brightness_ramp_rate_slow">153</integer>
+    <integer name="config_brightness_ramp_rate_slow">200</integer>
 
     <!-- Minimum screen brightness setting allowed by power manager.
          The user is forbidden from setting the brightness below this level.
@@ -367,7 +383,7 @@
     <!-- Default screen brightness setting
          Must be in the range specified by minimum and maximum.
          Equivalent to 67/255 (default for this device)    -->
-    <integer name="config_screenBrightnessSettingDefault">55</integer>
+    <integer name="config_screenBrightnessSettingDefault">90</integer>
 
      <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
     <integer-array name="config_keyboardTapVibePattern">
