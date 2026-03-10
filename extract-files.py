@@ -69,6 +69,25 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_register_dma_handle')
         .clear_symbol_version('remote_register_buf_attr')
         .clear_symbol_version('remote_register_buf'),
+    (
+        'vendor/lib64/libcodec2_soft_ac4dec.so',
+        'vendor/lib64/libcodec2_soft_ddpdec.so',
+        'vendor/lib64/libcodec2_soft_dolby.so',
+        'vendor/lib64/libcodec2_store_dolby.so',
+        'vendor/lib64/libdapparamstorage.so',
+        'vendor/lib64/libdeccfg.so',
+        'vendor/lib64/libdlbdsservice.so',
+        'vendor/lib64/libdlbpreg.so',
+        'vendor/lib64/libspatializerparamstorage.so',
+        'vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so',
+        'vendor/lib64/vendor.dolby.hardware.dms@2.0.so',
+        'vendor/lib64/soundfx/libdlbvol.so',
+        'vendor/lib64/soundfx/libswdap.so',
+        'vendor/lib64/soundfx/libswgamedap.so',
+        'vendor/lib64/soundfx/libswspatializer.so',
+        'vendor/lib64/soundfx/libswvqe.so'
+    ): blob_fixup()
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
