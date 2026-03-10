@@ -131,6 +131,15 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl">
+        <name>android.hardware.media.c2</name>
+        <version>1.0</version>
+        <optional>true</optional>
+        <interface>
+            <name>IComponentStore</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 
     <!-- NXP eSE HAL -->
     <hal format="hidl">
