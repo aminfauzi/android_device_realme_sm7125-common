@@ -302,6 +302,13 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 HWUI_COMPILE_FOR_PERF := true
 
 # ==========================================
+# Global LTO
+# ==========================================
+TARGET_GLOBAL_LTO := thin
+TARGET_GLOBAL_OPTIMIZATION := O3
+TARGET_GLOBAL_THINLTO := true
+
+# ==========================================
 # Releasetools Configuration
 # ==========================================
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
