@@ -503,6 +503,10 @@ PRODUCT_PACKAGES += \
 ## Root
 WITH_SU := true
 
+## Viper4Android
+PRODUCT_PACKAGES += \
+    ViPER4AndroidFX
+
 # ==========================================
 # Performance Optimization
 # ==========================================
