@@ -211,6 +211,7 @@ BOARD_HAVE_BLUETOOTH_QCOM := true
 # WiFi Configuration
 # ==========================================
 BOARD_WLAN_DEVICE := qcwcn
+BOARD_WLAN_CHIP := qca_cld3
 WIFI_DRIVER_DEFAULT := qca_cld3
 WIFI_DRIVER_STATE_CTRL_PARAM := "/dev/wlan"
 WIFI_DRIVER_STATE_OFF := "OFF"
