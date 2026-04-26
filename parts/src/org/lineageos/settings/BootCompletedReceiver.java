@@ -18,54 +18,22 @@
 package org.lineageos.settings;
 
 import android.content.BroadcastReceiver;
-import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
-import android.database.ContentObserver;
-import android.hardware.display.DisplayManager;
-import android.os.Handler;
-import android.os.IBinder;
-import android.os.UserHandle;
-import android.provider.Settings;
 import android.util.Log;
-import android.view.Display;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
     private static final String TAG = "Parts";
-    private static final boolean DEBUG = true;
 
     @Override
     public void onReceive(final Context context, Intent intent) {
-        if (DEBUG) Log.i(TAG, "Received intent: " + intent.getAction());
-        switch (intent.getAction()) {
-            case Intent.ACTION_LOCKED_BOOT_COMPLETED:
-                handleLockedBootCompleted(context);
-                break;
-            case Intent.ACTION_BOOT_COMPLETED:
-                handleBootCompleted(context);
-                break;
+        String action = intent.getAction();
+        Log.i(TAG, "Received action: " + action);
+
+        if (Intent.ACTION_LOCKED_BOOT_COMPLETED.equals(action)) {
+            // Logic for before user unlocks (Direct Boot)
+        } else if (Intent.ACTION_BOOT_COMPLETED.equals(action)) {
+            // Logic for after user unlocks
         }
-    }
-
-    private void handleLockedBootCompleted(Context context) {
-        if (DEBUG) Log.i(TAG, "Handling locked boot completed.");
-        try {
-            // Start necessary services
-            startServices(context);
-
-        } catch (Exception e) {
-            Log.e(TAG, "Error during locked boot completed processing", e);
-        }
-    }
-
-    private void handleBootCompleted(Context context) {
-        if (DEBUG) Log.i(TAG, "Handling boot completed.");
-        // Add additional boot-completed actions if needed
-    }
-
-    private void startServices(Context context) {
-        if (DEBUG) Log.i(TAG, "Starting services...");
-
     }
 }
