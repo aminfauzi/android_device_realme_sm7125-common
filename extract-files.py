@@ -53,6 +53,9 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libpiex_shim.so'),
     'vendor/lib64/hw/fingerprint.fpc.default.so': blob_fixup()
         .sig_replace('30 00 00 90 11 3A 42 F9', '30 00 00 90 1F 20 03 D5'),
+    'vendor/etc/seccomp_policy/atfwd@2.0.policy': blob_fixup()
+        .append_line('gettid: 1')
+        .append_line('fcntl: 1'),
     ('vendor/lib64/libalAILDC.so', 'vendor/lib64/libalLDC.so', 'vendor/lib64/libalhLDC.so'): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')
