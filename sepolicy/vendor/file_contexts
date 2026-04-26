@@ -63,3 +63,6 @@
 
 # SecureElement
 /(vendor|odm)/bin/hw/android\.hardware\.secure_element@1\.0-service-disabled      u:object_r:hal_secure_element_default_exec:s0
+
+# BW_HWMON
+/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon(/.*)?    u:object_r:sysfs_devfreq:s0
