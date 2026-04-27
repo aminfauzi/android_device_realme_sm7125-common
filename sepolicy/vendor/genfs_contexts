@@ -42,3 +42,6 @@ genfscon sysfs /devices/platform/soc u:object_r:sysfs_wakeup:s0
 genfscon proc /fastchg_fw_update              u:object_r:proc_fw_update:s0
 
 genfscon proc /ui_soc_decimal              u:object_r:proc_decimal:s0
+
+# Power Supply
+genfscon sysfs /class/power_supply u:object_r:sysfs_battery_supply:s0
