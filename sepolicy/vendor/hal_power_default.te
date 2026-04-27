@@ -6,3 +6,14 @@ get_prop(hal_power_default, vendor_mpctl_prop);
 allow hal_power_default sysfs_devfreq:dir r_dir_perms;
 allow hal_power_default sysfs_devfreq:file rw_file_perms;
 
+# Define the type and attribute it to the domain
+type vendor_qti_perfmgr, domain;
+type vendor_qti_perfmgr_exec, exec_type, vendor_file_type, file_type;
+
+# Grant permissions to the performance service to write to devfreq nodes
+allow vendor_qti_perfmgr vendor_sysfs_devfreq:dir r_dir_perms;
+allow vendor_qti_perfmgr vendor_sysfs_devfreq:file rw_file_perms;
+
+# Fallback for standard devfreq nodes
+allow vendor_qti_perfmgr sysfs_devfreq:dir r_dir_perms;
+allow vendor_qti_perfmgr sysfs_devfreq:file rw_file_perms;

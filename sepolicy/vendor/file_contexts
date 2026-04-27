@@ -66,3 +66,5 @@
 
 # BW_HWMON
 /sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon(/.*)?    u:object_r:sysfs_devfreq:s0
+
+/vendor/bin/hw/vendor\.qti\.hardware\.perf@2\.2-service    u:object_r:vendor_qti_perfmgr_exec:s0
