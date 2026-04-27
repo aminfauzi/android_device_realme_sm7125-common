@@ -60,6 +60,9 @@ blob_fixups: blob_fixups_user_type = {
         .append_line('connect: 1')
         .append_line('fcntl: 1')
         .append_line('writev: 1'),
+    'vendor/etc/seccomp_policy/vendor.qti.hardware.display.allocator-service.policy': blob_fixup()
+        .append_line('mremap: 1')
+        .append_line('fcntl: 1'),
     ('vendor/lib64/libalAILDC.so', 'vendor/lib64/libalLDC.so', 'vendor/lib64/libalhLDC.so'): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')
