@@ -159,7 +159,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml
 
 ## Health
-$(call inherit-product, vendor/qcom/opensource/healthd-ext/health-vendor-product.mk)
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.qti
 
 ## HIDL
 PRODUCT_PACKAGES += \
@@ -641,9 +642,6 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor \
     android.hardware.drm@1.4.vendor \
     android.hardware.health.storage@1.0.vendor \
-    android.hardware.health@1.0.vendor \
-    android.hardware.health@2.0.vendor \
-    android.hardware.health@2.1.vendor \
     android.hardware.nfc@1.0.vendor \
     android.hardware.nfc@1.1.vendor \
     android.hardware.nfc@1.2.vendor \
