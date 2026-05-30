@@ -187,6 +187,15 @@
     <string name="dc_dimming_enable_summary">Reduces eye strain in low light conditions</string>
     <string name="dc_dimming_enable_summary_not_supported">DC Dimming is currently not supported by the kernel</string>
 
+    <!-- GPU Boost (Adreno) -->
+    <string name="performance_title">Performance</string>
+    <string name="gpu_boost_title">GPU boost</string>
+    <string name="gpu_boost_summary">Bias the Adreno GPU governor toward higher clocks for smoother UI and games (small battery cost)</string>
+    <string name="gpu_boost_off">Off</string>
+    <string name="gpu_boost_light">Light</string>
+    <string name="gpu_boost_aggressive">Aggressive (default)</string>
+    <string name="gpu_boost_max">Maximum</string>
+
     <!--Display settings fragment -->
     <string name="display_settings_title">Display tweaks</string>
     <string name="display_settings_summary">High brightness mode and Anti-flicker</string>
