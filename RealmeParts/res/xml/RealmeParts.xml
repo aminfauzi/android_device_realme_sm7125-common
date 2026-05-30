@@ -41,6 +41,7 @@
 
         <ListPreference
             android:key="gpu_boost_level"
+            android:icon="@drawable/ic_performance"
             android:title="@string/gpu_boost_title"
             android:summary="@string/gpu_boost_summary"
             android:dialogTitle="@string/gpu_boost_title"
@@ -56,6 +57,7 @@
 
         <SwitchPreference
             android:key="charge_limit_enable"
+            android:icon="@drawable/ic_battery"
             android:title="@string/charge_limit_enable_title"
             android:summary="@string/charge_limit_enable_summary"
             android:defaultValue="false" />
