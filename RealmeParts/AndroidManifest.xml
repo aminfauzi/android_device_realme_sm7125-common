@@ -82,6 +82,9 @@
                  android:permission="RealmeDozeService">
         </service>
 
+        <service android:name=".battery.ChargeLimitService"
+                 android:exported="false" />
+
         <service
             android:name=".display.DcDimmingTileService"
             android:icon="@drawable/ic_dc_tile"

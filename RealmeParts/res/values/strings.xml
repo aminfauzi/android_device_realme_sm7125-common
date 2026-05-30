@@ -204,4 +204,12 @@
     <string name="hbm_mode_title">High Brightness Mode</string>
     <string name="hbm_mode_summary">High Brightness Mode allows the display panel brightness to go above the maximum stock value\, which helps in improving visibility in direct sunlight</string>
     <string name="hbm_enable_summary_not_supported">HBM is not currently supported by the kernel</string>
+
+    <!-- Battery -->
+    <string name="battery_title">Battery</string>
+    <string name="charge_limit_enable_title">Charge limit</string>
+    <string name="charge_limit_enable_summary">Stop charging at a set level to reduce battery wear from sitting at 100%</string>
+    <string name="charge_limit_level_title">Charge limit level</string>
+    <string name="charge_limit_level_summary">Charging pauses at this level and resumes if it drops below it</string>
+
 </resources>
