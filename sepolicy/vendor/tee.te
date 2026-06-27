@@ -1,2 +1,5 @@
 allow tee tmpfs:dir read;
 allow tee tmpfs:dir { open read };
+
+allow tee gatekeeper_vendor_data_file:dir rw_dir_perms;
+allow tee gatekeeper_vendor_data_file:file create_file_perms;
