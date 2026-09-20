@@ -67,3 +67,6 @@
 
 # BW_HWMON
 /sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon(/.*)?    u:object_r:sysfs_devfreq:s0
+
+# Device-owned AIDL thermal HAL
+/vendor/bin/hw/android\.hardware\.thermal-service\.realme_sm7125    u:object_r:hal_thermal_default_exec:s0
