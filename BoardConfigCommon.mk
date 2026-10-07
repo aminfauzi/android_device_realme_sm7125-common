@@ -121,6 +121,7 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/realme/sm7125
 TARGET_KERNEL_CONFIG := atoll_defconfig
+TARGET_KERNEL_FCM_VERSION := 7
 KERNEL_SUPPORTS_LLVM_TOOLS := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     LLVM=1 \
@@ -333,3 +334,8 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 # Vendor Blobs
 # ==========================================
 -include vendor/realme/sm7125-common/BoardConfigVendor.mk
+
+# ==========================================
+# VINTF
+# ==========================================
+VINTF_ENFORCE_NO_UNUSED_HALS := true
