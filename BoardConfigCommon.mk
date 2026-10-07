@@ -6,6 +6,10 @@
 
 COMMON_PATH := device/realme/sm7125-common
 
+# Legacy Qualcomm blobs require the real ION allocator on Android 17.
+# LineageOS legacy ION support by Nolen Johnson (review.lineageos.org/492616).
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # ==========================================
 # Platform Configuration
 # ==========================================
@@ -292,6 +296,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 # ==========================================
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
+include device/lineage/sepolicy/libion/sepolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
