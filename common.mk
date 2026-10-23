@@ -295,6 +295,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
+# Pixel scheduler QoS is unavailable on 4.14; ADPF manages uclamp separately.
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+
 ## Privileged permissions for Android System Intelligence
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-realme-sm7125.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-realme-sm7125.xml
