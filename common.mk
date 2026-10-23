@@ -28,6 +28,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.soc.manufacturer=QTI \
     ro.soc.model=SM7125
 
+# Audio
+PRODUCT_PACKAGES += \
+    libvolumelistener
+
 # ==========================================
 # Components
 # ==========================================
@@ -290,6 +294,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 ## IRQ balance config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
+
+## Privileged permissions for Android System Intelligence
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-realme-sm7125.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-realme-sm7125.xml
 
 ## Power
 PRODUCT_PACKAGES += \
