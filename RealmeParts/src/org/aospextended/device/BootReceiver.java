@@ -35,6 +35,7 @@ import org.aospextended.device.vibration.VibratorStrengthPreference;
 import org.aospextended.device.camerahelper.CameraService;
 import org.aospextended.device.utils.FileUtils;
 import org.aospextended.device.gpu.GpuBoostSettings;
+import org.aospextended.device.performance.KProfilesSettings;
 import org.aospextended.device.battery.ChargeLimitSettings;
 import org.aospextended.device.touch.TouchModeSettings;
 
@@ -55,6 +56,7 @@ public class BootReceiver extends BroadcastReceiver {
             TouchGestures.enableDt2w(prefs.getBoolean(
                 TouchGestures.PREF_DT2W_ENABLE, true));
             GpuBoostSettings.restore(context);
+            KProfilesSettings.restore(context);
             ChargeLimitSettings.restore(context);
             TouchModeSettings.restore(context);
         }
