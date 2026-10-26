@@ -558,7 +558,6 @@ PRODUCT_PACKAGES += \
     android.frameworks.cameraservice.service@2.0.vendor \
     android.frameworks.cameraservice.service@2.1.vendor \
     android.frameworks.displayservice@1.0.vendor \
-    android.frameworks.schedulerservice@1.0.vendor \
     android.frameworks.sensorservice@1.0.vendor \
     android.frameworks.stats@1.0.vendor \
     android.hardware.atrace@1.0.vendor \
