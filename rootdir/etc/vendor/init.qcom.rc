@@ -603,10 +603,9 @@ service vendor.wigig_supplicant /vendor/bin/hw/wpa_supplicant \
     -O/data/vendor/wifi/wigig_sockets -dd \
     -e/data/vendor/wifi/wigig_entropy.bin -g@android:wigig/wpa_wigig0 \
     -S wigigsvc
-    #   we will start as root and wpa_supplicant will switch to user wifi
-    #   after setting up the capabilities required for WEXT
-    #   user wifi
-    #   group wifi inet keystore
+    user wifi
+    group wifi net_raw net_admin
+    capabilities NET_RAW NET_ADMIN
     class main
     socket wigig/wpa_wigig0 dgram 660 wifi wifi
     disabled
