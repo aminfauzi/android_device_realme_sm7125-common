@@ -415,6 +415,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Face unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 ## Partition
 PRODUCT_PACKAGES += \
      vendor_bt_firmware_mountpoint \
