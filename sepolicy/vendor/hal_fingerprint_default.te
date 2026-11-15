@@ -40,3 +40,6 @@ allow init hal_fingerprint_default:process ptrace;
 
 allow hal_fingerprint_default vendor_data_file:file { append getattr open read write };
 allow init hal_fingerprint_default:process ptrace;
+
+# Goodix fingerprint HAL reads the root directory
+allow hal_fingerprint_default rootfs:dir r_dir_perms;
