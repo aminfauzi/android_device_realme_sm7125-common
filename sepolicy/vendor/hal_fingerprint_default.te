@@ -38,7 +38,8 @@ r_dir_file(hal_fingerprint_default, sysfs_rtc)
 # Allow init to ptrace hal_fingerprint
 allow init hal_fingerprint_default:process ptrace;
 
-allow hal_fingerprint_default vendor_data_file:file { append getattr open read write };
+allow hal_fingerprint_default vendor_data_file:dir create_dir_perms;
+allow hal_fingerprint_default vendor_data_file:file create_file_perms;
 allow init hal_fingerprint_default:process ptrace;
 
 # Goodix fingerprint HAL reads the root directory
