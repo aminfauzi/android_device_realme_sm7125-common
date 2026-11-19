@@ -37,7 +37,7 @@
 
 #light
 
-/vendor/bin/hw/android\.hardware\.light@2\.0-service\.realme_sm7125    u:object_r:hal_light_default_exec:s0
+/vendor/bin/hw/android\.hardware\.lights-service\.realme_sm7125    u:object_r:hal_light_default_exec:s0
 
 
 # Oppo nv

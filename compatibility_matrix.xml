@@ -92,13 +92,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
 
-    <!-- Light HAL -->
-    <hal format="hidl">
-        <name>android.hardware.light</name>
-        <version>2.0</version>
-        <optional>false</optional>
-    </hal>
-    
     <!-- FactoryAta HAL -->
     <hal format="hidl">
         <name>interfaces.factoryAta</name>

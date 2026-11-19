@@ -234,7 +234,7 @@ PRODUCT_COPY_FILES += \
 
 ## Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.realme_sm7125
+    android.hardware.lights-service.realme_sm7125
 
 ## Media
 PRODUCT_PACKAGES += \
@@ -638,7 +638,6 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0.vendor \
     android.hardware.keymaster@4.0.vendor \
     android.hardware.keymaster@4.1.vendor \
-    android.hardware.light@2.0.vendor \
     android.hardware.media.bufferpool@1.0.vendor \
     android.hardware.media.c2@1.0.vendor \
     android.hardware.media.c2@1.1.vendor \
