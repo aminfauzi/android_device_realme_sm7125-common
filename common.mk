@@ -85,13 +85,7 @@ PRODUCT_PACKAGES += \
     Parts
 
 # Dalvik configs
-PRODUCT_VENDOR_PROPERTIES += \
-    dalvik.vm.heapstartsize=32m \
-    dalvik.vm.heapgrowthlimit=256m \
-    dalvik.vm.heapsize=512m \
-    dalvik.vm.heaptargetutilization=0.5 \
-    dalvik.vm.heapminfree=32m \
-    dalvik.vm.heapmaxfree=64m
+$(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
 
 # Display
 PRODUCT_PACKAGES += \
