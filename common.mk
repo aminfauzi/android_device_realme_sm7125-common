@@ -476,6 +476,9 @@ PRODUCT_PACKAGES += \
 # Device-specific Packages
 # ==========================================
 
+# Angle
+PRODUCT_PACKAGES += AngleAllowListOverlay
+
 ## Blur
 TARGET_ENABLE_BLUR := true
 

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Games that use ANGLE as the GLES driver on this device.
+         This list REPLACES the one from the GMS overlay.
+         To add a game, add an <item> line. To remove one, delete its line. -->
+    <string-array name="config_angleAllowList" translatable="false">
+        <item>com.dreamgames.royalmatch</item>
+        <item>com.dxx.firenow</item>
+        <item>com.gramgames.mergedragons</item>
+        <item>com.ludo.king</item>
+        <item>com.mojang.minecraftpe</item>
+        <item>com.my.defense</item>
+        <item>com.nintendo.zaka</item>
+        <item>com.os.airforce</item>
+        <item>com.playrix.fishdomdd.gplay</item>
+        <item>io.teslatech.callbreak</item>
+        <item>jp.konami.prospia</item>
+        <item>net.peakgames.toonblast</item>
+        <item>com.yottagames.gameofmafia</item>
+        <item>com.Sunborn.SnqxExilium.Glo</item>
+        <item>com.haoplay.game.and.exilium</item>
+        <item>com.rockstargames.gtasa</item>
+        <item>com.h73.jhqyna</item>
+        <item>com.sega.CrazyTaxiplayhaven</item>
+        <item>en.haoplay.and.rm</item>
+        <item>com.netease.g108na</item>
+    </string-array>
+</resources>
