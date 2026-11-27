@@ -149,6 +149,9 @@
         </stream>
     -->
     <!-- #endif OPLUS_FEATURE_DOLBY -->
+        <stream type="music">
+            <apply effect="v4a_standard_re"/>
+        </stream>
     </postprocess>
     <preprocess>
         <stream type="voice_communication">
