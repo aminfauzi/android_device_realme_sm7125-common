@@ -1,4 +1,5 @@
 # Audio
+audio.offload.disable=1
 vendor.audio_hal.period_size=192
 ro.vendor.audio.sdk.fluencetype=none
 persist.vendor.audio.fluence.voicecall=true
@@ -10,7 +11,7 @@ persist.vendor.audio.avs.afe_api_version=2
 vendor.audio.tunnel.encode=false
 persist.vendor.audio.ras.enabled=false
 vendor.audio.offload.buffer.size.kb=32
-vendor.audio.offload.track.enable=true
+vendor.audio.offload.track.enable=false
 audio.deep_buffer.media=true
 vendor.audio.offload.multiaac.enable=true
 vendor.audio.dolby.ds2.enabled=false
